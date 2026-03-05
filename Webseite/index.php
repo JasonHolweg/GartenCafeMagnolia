@@ -4,6 +4,15 @@
  * Router: lädt Unterseiten via ?page=KEY sicher (LFI-Whitelist)
  */
 
+// Wartungsmodus / Coming Soon
+// Auf false setzen, sobald die Website live gehen soll.
+$site_under_construction = true;
+
+if ($site_under_construction) {
+    require __DIR__ . '/pages/under-construction.php';
+    exit;
+}
+
 // Whitelist erlaubter Seiten
 $allowed_pages = [
     'home',

@@ -174,34 +174,6 @@ function initMobileMenu() {
 }
 
 // ──────────────────────────────────────────────────────────────────────────────
-// Theme Toggle (Dark / Light)
-// ──────────────────────────────────────────────────────────────────────────────
-function initThemeToggle() {
-  const toggles = $$('.theme-toggle');
-  if (!toggles.length) return;
-
-  const stored  = localStorage.getItem('theme');
-  const system  = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
-  let current   = stored || system;
-
-  function apply(theme) {
-    document.documentElement.setAttribute('data-theme', theme);
-    toggles.forEach(btn => {
-      btn.textContent = theme === 'dark' ? '☀️' : '🌙';
-      btn.setAttribute('aria-label', theme === 'dark' ? 'Zum hellen Modus wechseln' : 'Zum dunklen Modus wechseln');
-    });
-    localStorage.setItem('theme', theme);
-    current = theme;
-  }
-
-  apply(current);
-
-  toggles.forEach(btn => {
-    btn.addEventListener('click', () => apply(current === 'dark' ? 'light' : 'dark'));
-  });
-}
-
-// ──────────────────────────────────────────────────────────────────────────────
 // Back to Top
 // ──────────────────────────────────────────────────────────────────────────────
 function initBackToTop() {
@@ -469,7 +441,6 @@ function initTodayHighlight() {
 // Init all
 // ──────────────────────────────────────────────────────────────────────────────
 document.addEventListener('DOMContentLoaded', () => {
-  initThemeToggle();
   initStickyHeader();
   initMobileMenu();
   initScrollReveal();

@@ -25,7 +25,7 @@ $canonical        = isset($canonical)        ? $canonical        : $page_url;
 $full_title = $page_title . ' | ' . $site_name;
 ?>
 <!DOCTYPE html>
-<html lang="de" data-theme="light">
+<html lang="de">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -51,8 +51,8 @@ $full_title = $page_title . ' | ' . $site_name;
   <meta name="twitter:description" content="<?= htmlspecialchars($og_description, ENT_QUOTES, 'UTF-8') ?>">
   <meta name="twitter:image"       content="<?= htmlspecialchars($og_image, ENT_QUOTES, 'UTF-8') ?>">
 
-  <!-- Favicon (SVG inline) -->
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌸</text></svg>">
+  <!-- Favicon -->
+  <link rel="icon" href="/assets/img/garten-cafe-magnolia.png" type="image/png">
 
   <!-- Fonts: system stack first, Inter as web-safe upgrade -->
   <link rel="preconnect" href="https://fonts.googleapis.com">

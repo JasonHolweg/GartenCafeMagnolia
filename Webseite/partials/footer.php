@@ -10,10 +10,12 @@
       <!-- Brand Column -->
       <div class="footer-brand">
         <a href="/" class="site-logo" style="margin-bottom:.75rem;" aria-label="Garten Café Magnolia">
-          <div class="logo-icon" aria-hidden="true">🌸</div>
+          <div class="logo-icon" aria-hidden="true">
+            <img src="/assets/img/garten-cafe-magnolia.png" alt="" loading="lazy" decoding="async">
+          </div>
           <div>
-            <span class="logo-text-top" style="color:rgba(255,255,255,.5);">Garten Café</span>
-            <span class="logo-text-bottom" style="color:#fff;">Magnolia</span>
+            <span class="logo-text-top footer-logo-top">Garten Café</span>
+            <span class="logo-text-bottom footer-logo-bottom">Magnolia</span>
           </div>
         </a>
         <p>Frühstückserlebnis, Kaffeespezialitäten &amp; Genuss im Grünen – mitten im Treibhaus.</p>
@@ -49,10 +51,10 @@
       <div class="footer-col">
         <h4>Kontakt</h4>
         <ul>
-          <li style="color:rgba(255,255,255,.6); font-size:.9rem;">Altholzkrug 40</li>
-          <li style="color:rgba(255,255,255,.6); font-size:.9rem;">24976 Handewitt</li>
-          <li style="color:rgba(255,255,255,.6); font-size:.9rem; margin-top:.5rem;">Im Gartencenter Garten2000</li>
-          <li style="margin-top:.5rem;"><a href="mailto:info@gartencafe-magnolia.de">info@gartencafe-magnolia.de</a></li>
+          <li class="footer-muted">Altholzkrug 40</li>
+          <li class="footer-muted">24976 Handewitt</li>
+          <li class="footer-muted spaced">Im Gartencenter Garten2000</li>
+          <li class="spaced"><a href="mailto:info@gartencafe-magnolia.de">info@gartencafe-magnolia.de</a></li>
           <!-- TODO: Echte Telefonnummer eintragen -->
         </ul>
       </div>

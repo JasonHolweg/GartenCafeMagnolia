@@ -17,7 +17,9 @@ $nav_items = [
 
     <!-- Logo -->
     <a href="/" class="site-logo" aria-label="Garten Café Magnolia – Startseite">
-      <div class="logo-icon" aria-hidden="true">🌸</div>
+      <div class="logo-icon" aria-hidden="true">
+        <img src="/assets/img/garten-cafe-magnolia.png" alt="" loading="lazy" decoding="async">
+      </div>
       <div>
         <span class="logo-text-top">Garten Café</span>
         <span class="logo-text-bottom">Magnolia</span>
@@ -36,7 +38,6 @@ $nav_items = [
 
     <!-- Header Actions -->
     <div class="header-actions">
-      <button class="theme-toggle" aria-label="Zum dunklen Modus wechseln" title="Theme wechseln">🌙</button>
       <a href="/?page=tischreservieren" class="btn btn-accent btn-sm" aria-label="Tisch reservieren">
         🗓 Reservieren
       </a>
