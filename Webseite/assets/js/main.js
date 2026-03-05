@@ -414,9 +414,9 @@ function initActiveNav() {
   const page   = params.get('page') || 'home';
 
   $$('.main-nav a, .mobile-nav a').forEach(a => {
-    const href   = a.getAttribute('href') || '';
-    const isHome = href === '/' || href === '/index.php' || href === 'index.php' || href === '?page=home' || href === './' || href === '';
-    const match  = href.includes(`page=${page}`) || (page === 'home' && isHome);
+    const href    = a.getAttribute('href') || '';
+    const isHome  = ['/', '/index.php', 'index.php', '?page=home', './', ''].includes(href);
+    const match   = href.includes(`page=${page}`) || (page === 'home' && isHome);
     a.classList.toggle('active', match);
     if (match) a.setAttribute('aria-current', 'page');
   });

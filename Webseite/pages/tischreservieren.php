@@ -53,7 +53,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
       $form_errors['email'] = 'Bitte gib eine gültige E-Mail-Adresse ein.';
     }
-    if (empty($date) || strtotime($date) < strtotime('today')) {
+    if (empty($date) || strtotime(date('Y-m-d', strtotime($date))) < strtotime(date('Y-m-d'))) {
       $form_errors['date'] = 'Bitte wähle ein gültiges Datum aus (nicht in der Vergangenheit).';
     }
     if (empty($time)) {

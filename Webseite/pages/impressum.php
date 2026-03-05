@@ -103,7 +103,7 @@ require __DIR__ . '/../partials/header.php';
         </p>
 
         <p style="font-size:.85rem;color:color-mix(in srgb, var(--dark) 50%, transparent);margin-top:2rem;">
-          <em>Stand: <?= date('F Y') ?></em>
+          <em>Stand: <?= date('m/Y') ?></em>
         </p>
 
       </div>

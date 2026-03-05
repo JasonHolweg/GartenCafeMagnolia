@@ -181,7 +181,7 @@ require __DIR__ . '/../partials/header.php';
         </p>
 
         <p style="font-size:.85rem;color:color-mix(in srgb, var(--dark) 50%, transparent);margin-top:2rem;">
-          <em>Stand: <?= date('F Y') ?> – Dieses Dokument wurde als Grundgerüst erstellt und muss rechtlich geprüft werden.</em>
+          <em>Stand: <?= date('m/Y') ?> – Dieses Dokument wurde als Grundgerüst erstellt und muss rechtlich geprüft werden.</em>
         </p>
 
       </div>
