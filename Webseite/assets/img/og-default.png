@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#122523"/>
+      <stop offset="100%" stop-color="#1C5E52"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <text x="600" y="280" font-family="Georgia, serif" font-size="64" font-weight="bold" fill="#F6EEE3" text-anchor="middle">🌸 Garten Café Magnolia</text>
+  <text x="600" y="360" font-family="Arial, sans-serif" font-size="28" fill="rgba(246,238,227,0.75)" text-anchor="middle">Frühstückserlebnis &amp; Kaffeespezialitäten im Treibhaus</text>
+  <text x="600" y="420" font-family="Arial, sans-serif" font-size="22" fill="rgba(246,238,227,0.5)" text-anchor="middle">Altholzkrug 40 · 24976 Handewitt</text>
+</svg>
