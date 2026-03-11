@@ -115,7 +115,7 @@ $times = ['08:30', '09:00', '09:30', '10:00', '10:30', '11:00', '11:30', '12:00'
   <section class="page-hero" aria-labelledby="res-heading">
     <div class="container">
       <nav class="breadcrumb" aria-label="Breadcrumb">
-        <a href="/">Startseite</a>
+        <a href="<?= htmlspecialchars($base_path, ENT_QUOTES, 'UTF-8') ?>/">Startseite</a>
         <span aria-hidden="true">›</span>
         <span aria-current="page">Tisch reservieren</span>
       </nav>
@@ -162,14 +162,14 @@ $times = ['08:30', '09:00', '09:30', '10:00', '10:30', '11:00', '11:30', '12:00'
               <h3>Reservierungsanfrage gesendet!</h3>
               <p>Vielen Dank, <?= htmlspecialchars($form_data['name'] ?? 'lieber Gast', ENT_QUOTES, 'UTF-8') ?>!
                 Wir melden uns so schnell wie möglich per E-Mail bei dir.</p>
-              <a href="/" class="btn btn-primary" style="margin-top:1.5rem;">Zurück zur Startseite</a>
+              <a href="<?= htmlspecialchars($base_path, ENT_QUOTES, 'UTF-8') ?>/" class="btn btn-primary" style="margin-top:1.5rem;">Zurück zur Startseite</a>
             </div>
           <?php else: ?>
 
             <h3 style="margin-bottom:1.5rem;">Anfrage senden</h3>
 
             <form id="reservation-form"
-                  action="/?page=tischreservieren"
+                  action="<?= htmlspecialchars($base_path, ENT_QUOTES, 'UTF-8') ?>/?page=tischreservieren"
                   method="POST"
                   novalidate
                   aria-label="Tischreservierung">
@@ -286,7 +286,7 @@ $times = ['08:30', '09:00', '09:30', '10:00', '10:30', '11:00', '11:30', '12:00'
                            aria-required="true"
                            aria-describedby="err-privacy">
                     <span>
-                      Ich habe die <a href="/?page=datenschutz" target="_blank">Datenschutzerklärung</a> gelesen
+                      Ich habe die <a href="<?= htmlspecialchars($base_path, ENT_QUOTES, 'UTF-8') ?>/?page=datenschutz" target="_blank">Datenschutzerklärung</a> gelesen
                       und bin mit der Verarbeitung meiner Daten für die Bearbeitung der Reservierungsanfrage einverstanden. <span class="required">*</span>
                     </span>
                   </label>

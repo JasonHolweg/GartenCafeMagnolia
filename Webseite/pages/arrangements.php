@@ -90,7 +90,7 @@ $arrangements = [
   <section class="page-hero" aria-labelledby="arr-heading">
     <div class="container">
       <nav class="breadcrumb" aria-label="Breadcrumb">
-        <a href="/">Startseite</a>
+        <a href="<?= htmlspecialchars($base_path, ENT_QUOTES, 'UTF-8') ?>/">Startseite</a>
         <span aria-hidden="true">›</span>
         <span aria-current="page">Arrangements</span>
       </nav>
@@ -138,7 +138,7 @@ $arrangements = [
                 <?php endforeach; ?>
               </ul>
 
-              <a href="/?page=tischreservieren" class="btn btn-accent btn-sm">
+              <a href="<?= htmlspecialchars($base_path, ENT_QUOTES, 'UTF-8') ?>/?page=tischreservieren" class="btn btn-accent btn-sm">
                 Anfragen &amp; Reservieren
               </a>
             </div>
@@ -160,7 +160,7 @@ $arrangements = [
           individuelles Arrangement für dich zusammen. Schreib uns einfach an!
         </p>
         <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;">
-          <a href="/?page=tischreservieren" class="btn btn-accent">🗓 Jetzt anfragen</a>
+          <a href="<?= htmlspecialchars($base_path, ENT_QUOTES, 'UTF-8') ?>/?page=tischreservieren" class="btn btn-accent">🗓 Jetzt anfragen</a>
           <a href="mailto:info@gartencafe-magnolia.de" class="btn btn-ghost">✉ E-Mail schreiben</a>
         </div>
       </div>

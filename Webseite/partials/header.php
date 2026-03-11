@@ -5,20 +5,20 @@
 $current_page = isset($_GET['page']) ? $_GET['page'] : 'home';
 
 $nav_items = [
-  ['page' => 'home',             'label' => 'Startseite',       'href' => '/'],
-  ['page' => 'ueber-uns',        'label' => 'Über uns',          'href' => '/?page=ueber-uns'],
-  ['page' => 'speisekarte',      'label' => 'Speisekarte',       'href' => '/?page=speisekarte'],
-  ['page' => 'arrangements',     'label' => 'Arrangements',      'href' => '/?page=arrangements'],
-  ['page' => 'tischreservieren', 'label' => 'Tisch reservieren', 'href' => '/?page=tischreservieren'],
+  ['page' => 'home',             'label' => 'Startseite',       'href' => $base_path . '/'],
+  ['page' => 'ueber-uns',        'label' => 'Über uns',          'href' => $base_path . '/?page=ueber-uns'],
+  ['page' => 'speisekarte',      'label' => 'Speisekarte',       'href' => $base_path . '/?page=speisekarte'],
+  ['page' => 'arrangements',     'label' => 'Arrangements',      'href' => $base_path . '/?page=arrangements'],
+  ['page' => 'tischreservieren', 'label' => 'Tisch reservieren', 'href' => $base_path . '/?page=tischreservieren'],
 ];
 ?>
 <header class="site-header" role="banner">
   <div class="container header-inner">
 
     <!-- Logo -->
-    <a href="/" class="site-logo" aria-label="Garten Café Magnolia – Startseite">
+    <a href="<?= htmlspecialchars($base_path, ENT_QUOTES, 'UTF-8') ?>/" class="site-logo" aria-label="Garten Café Magnolia – Startseite">
       <div class="logo-icon" aria-hidden="true">
-        <img src="/assets/img/garten-cafe-magnolia.png" alt="" loading="lazy" decoding="async">
+        <img src="<?= htmlspecialchars($base_path, ENT_QUOTES, 'UTF-8') ?>/assets/img/garten-cafe-magnolia.png" alt="" loading="lazy" decoding="async">
       </div>
       <div>
         <span class="logo-text-top">Garten Café</span>
@@ -38,7 +38,7 @@ $nav_items = [
 
     <!-- Header Actions -->
     <div class="header-actions">
-      <a href="/?page=tischreservieren" class="btn btn-accent btn-sm" aria-label="Tisch reservieren">
+      <a href="<?= htmlspecialchars($base_path, ENT_QUOTES, 'UTF-8') ?>/?page=tischreservieren" class="btn btn-accent btn-sm" aria-label="Tisch reservieren">
         🗓 Reservieren
       </a>
       <button class="hamburger" aria-label="Menü öffnen" aria-expanded="false" aria-controls="mobile-nav">
@@ -61,7 +61,7 @@ $nav_items = [
     </a>
   <?php endforeach; ?>
   <div style="margin-top:2rem; display:flex; gap:.75rem; flex-wrap:wrap; justify-content:center;">
-    <a href="/?page=tischreservieren" class="btn btn-accent">🗓 Tisch reservieren</a>
-    <a href="/?page=speisekarte"      class="btn btn-ghost">📋 Speisekarte</a>
+    <a href="<?= htmlspecialchars($base_path, ENT_QUOTES, 'UTF-8') ?>/?page=tischreservieren" class="btn btn-accent">🗓 Tisch reservieren</a>
+    <a href="<?= htmlspecialchars($base_path, ENT_QUOTES, 'UTF-8') ?>/?page=speisekarte"      class="btn btn-ghost">📋 Speisekarte</a>
   </div>
 </nav>

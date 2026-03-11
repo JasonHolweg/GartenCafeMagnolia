@@ -15,7 +15,7 @@ require __DIR__ . '/../partials/head.php';
     <div class="construction-glow" aria-hidden="true"></div>
 
     <div class="construction-logo-wrap" aria-hidden="true">
-      <img src="/assets/img/garten-cafe-magnolia.png" alt="" class="construction-logo" loading="eager" decoding="async">
+      <img src="<?= htmlspecialchars($base_path, ENT_QUOTES, 'UTF-8') ?>/assets/img/garten-cafe-magnolia.png" alt="" class="construction-logo" loading="eager" decoding="async">
     </div>
 
     <p class="construction-kicker">Garten Café Magnolia</p>

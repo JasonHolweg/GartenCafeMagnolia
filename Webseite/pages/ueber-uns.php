@@ -16,7 +16,7 @@ require __DIR__ . '/../partials/header.php';
   <section class="page-hero" aria-labelledby="about-heading">
     <div class="container">
       <nav class="breadcrumb" aria-label="Breadcrumb">
-        <a href="/">Startseite</a>
+        <a href="<?= htmlspecialchars($base_path, ENT_QUOTES, 'UTF-8') ?>/">Startseite</a>
         <span aria-hidden="true">›</span>
         <span aria-current="page">Über uns</span>
       </nav>
@@ -144,8 +144,8 @@ require __DIR__ . '/../partials/header.php';
         Worte können das Erlebnis nicht vollständig beschreiben. Komm vorbei und lass dich verzaubern.
       </p>
       <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;">
-        <a href="/?page=tischreservieren" class="btn btn-accent">🗓 Jetzt Tisch reservieren</a>
-        <a href="/?page=speisekarte"      class="btn btn-ghost">📋 Zur Speisekarte</a>
+        <a href="<?= htmlspecialchars($base_path, ENT_QUOTES, 'UTF-8') ?>/?page=tischreservieren" class="btn btn-accent">🗓 Jetzt Tisch reservieren</a>
+        <a href="<?= htmlspecialchars($base_path, ENT_QUOTES, 'UTF-8') ?>/?page=speisekarte"      class="btn btn-ghost">📋 Zur Speisekarte</a>
       </div>
     </div>
   </section>

@@ -54,8 +54,8 @@ $opening_hours = [
       <h1>Garten Café<br><span class="gradient-text">Magnolia</span></h1>
       <p class="hero-sub">Frühstückserlebnis, Kaffeespezialitäten &amp; Genuss im Grünen.</p>
       <div class="hero-ctas">
-        <a href="/?page=tischreservieren" class="btn btn-accent">🗓 Tisch reservieren</a>
-        <a href="/?page=speisekarte"      class="btn btn-ghost-light">📋 Speisekarte ansehen</a>
+        <a href="<?= htmlspecialchars($base_path, ENT_QUOTES, 'UTF-8') ?>/?page=tischreservieren" class="btn btn-accent">🗓 Tisch reservieren</a>
+        <a href="<?= htmlspecialchars($base_path, ENT_QUOTES, 'UTF-8') ?>/?page=speisekarte"      class="btn btn-ghost-light">📋 Speisekarte ansehen</a>
       </div>
     </div>
 
@@ -114,7 +114,7 @@ $opening_hours = [
           <h2 id="arrangements-heading">Unsere Arrangements</h2>
           <p>Von der romantischen Tea Time bis zum Familienfrühstück – für jeden Anlass das passende Erlebnis.</p>
         </div>
-        <a href="/?page=arrangements" class="btn btn-ghost reveal">Alle Arrangements →</a>
+        <a href="<?= htmlspecialchars($base_path, ENT_QUOTES, 'UTF-8') ?>/?page=arrangements" class="btn btn-ghost reveal">Alle Arrangements →</a>
       </div>
 
       <div class="grid-3">
@@ -130,7 +130,7 @@ $opening_hours = [
             <h3>Tea Time</h3>
             <p>Ein romantisches Tee-Erlebnis mit feinen Sandwiches, Scones und Gebäck im Grünen.</p>
             <div class="card-price">ab <strong>18,50 €</strong> p.P.</div>
-            <a href="/?page=arrangements" class="btn btn-primary btn-sm">Mehr erfahren</a>
+            <a href="<?= htmlspecialchars($base_path, ENT_QUOTES, 'UTF-8') ?>/?page=arrangements" class="btn btn-primary btn-sm">Mehr erfahren</a>
           </div>
         </div>
 
@@ -146,7 +146,7 @@ $opening_hours = [
             <h3>Mini-Treibhaus</h3>
             <p>Exklusive Nutzung unseres kleineren Gewächshauses für Gruppen – perfekt für besondere Anlässe.</p>
             <div class="card-price">ab <strong>22,00 €</strong> p.P.</div>
-            <a href="/?page=arrangements" class="btn btn-primary btn-sm">Mehr erfahren</a>
+            <a href="<?= htmlspecialchars($base_path, ENT_QUOTES, 'UTF-8') ?>/?page=arrangements" class="btn btn-primary btn-sm">Mehr erfahren</a>
           </div>
         </div>
 
@@ -162,7 +162,7 @@ $opening_hours = [
             <h3>Familienfrühstück</h3>
             <p>Das große Frühstücksbuffet für die ganze Familie – genießt gemeinsam inmitten des Gewächshauses.</p>
             <div class="card-price">ab <strong>15,90 €</strong> p.P.</div>
-            <a href="/?page=arrangements" class="btn btn-primary btn-sm">Mehr erfahren</a>
+            <a href="<?= htmlspecialchars($base_path, ENT_QUOTES, 'UTF-8') ?>/?page=arrangements" class="btn btn-primary btn-sm">Mehr erfahren</a>
           </div>
         </div>
       </div>

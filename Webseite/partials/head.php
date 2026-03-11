@@ -19,7 +19,7 @@ $page_title       = isset($page_title)       ? $page_title       : 'Frühstück 
 $meta_description = isset($meta_description) ? $meta_description : 'Das Garten Café Magnolia bietet ein einzigartiges Frühstückserlebnis im Treibhaus – Kaffeespezialitäten & Genuss im Grünen. Tischreservierung online möglich.';
 $og_title         = isset($og_title)         ? $og_title         : $page_title;
 $og_description   = isset($og_description)   ? $og_description   : $meta_description;
-$og_image         = isset($og_image)         ? $og_image         : $base_url . '/assets/img/og-default.png';
+$og_image         = isset($og_image)         ? $og_image         : $base_url . $base_path . '/assets/img/og-default.png';
 $canonical        = isset($canonical)        ? $canonical        : $page_url;
 
 $full_title = $page_title . ' | ' . $site_name;
@@ -52,7 +52,7 @@ $full_title = $page_title . ' | ' . $site_name;
   <meta name="twitter:image"       content="<?= htmlspecialchars($og_image, ENT_QUOTES, 'UTF-8') ?>">
 
   <!-- Favicon -->
-  <link rel="icon" href="/assets/img/garten-cafe-magnolia.png" type="image/png">
+  <link rel="icon" href="<?= htmlspecialchars($base_path, ENT_QUOTES, 'UTF-8') ?>/assets/img/garten-cafe-magnolia.png" type="image/png">
 
   <!-- Fonts: system stack first, Inter as web-safe upgrade -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -60,7 +60,8 @@ $full_title = $page_title . ' | ' . $site_name;
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
   <!-- Stylesheet -->
-  <link rel="stylesheet" href="/assets/css/style.css">
+  <link rel="stylesheet" href="<?= htmlspecialchars($base_path, ENT_QUOTES, 'UTF-8') ?>/assets/css/style.css">
 </head>
 <body>
+<script>window.__BASE_PATH__ = <?= json_encode($base_path) ?>;</script>
 <a class="skip-link" href="#main-content">Zum Inhalt springen</a>

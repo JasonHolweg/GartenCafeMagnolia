@@ -384,10 +384,11 @@ function initReservationForm() {
 function initActiveNav() {
   const params = new URLSearchParams(window.location.search);
   const page   = params.get('page') || 'home';
+  const bp     = window.__BASE_PATH__ || '';
 
   $$('.main-nav a, .mobile-nav a').forEach(a => {
     const href    = a.getAttribute('href') || '';
-    const isHome  = ['/', '/index.php', 'index.php', '?page=home', './', ''].includes(href);
+    const isHome  = [bp + '/', bp + '/index.php', 'index.php', '?page=home', './', ''].includes(href);
     const match   = href.includes(`page=${page}`) || (page === 'home' && isHome);
     a.classList.toggle('active', match);
     if (match) a.setAttribute('aria-current', 'page');

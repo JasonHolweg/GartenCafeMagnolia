@@ -4,9 +4,17 @@
  * Router: lädt Unterseiten via ?page=KEY sicher (LFI-Whitelist)
  */
 
+// ──────────────────────────────────────────────────────────────
+// Basis-Pfad für Unterverzeichnis-Betrieb
+// Beispiel: '/magnolia' wenn die Seite unter example.com/magnolia/ läuft.
+// Leer lassen ('') wenn die Seite im Root-Verzeichnis liegt.
+// KEIN abschließender Slash!
+// ──────────────────────────────────────────────────────────────
+$base_path = '/demo/magnolia';
+
 // Wartungsmodus / Coming Soon
 // Auf false setzen, sobald die Website live gehen soll.
-$site_under_construction = true;
+$site_under_construction = false;
 
 if ($site_under_construction) {
     require __DIR__ . '/pages/under-construction.php';

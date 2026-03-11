@@ -19,7 +19,7 @@ require __DIR__ . '/../partials/header.php';
   <section class="page-hero" aria-labelledby="privacy-heading">
     <div class="container">
       <nav class="breadcrumb" aria-label="Breadcrumb">
-        <a href="/">Startseite</a>
+        <a href="<?= htmlspecialchars($base_path, ENT_QUOTES, 'UTF-8') ?>/">Startseite</a>
         <span aria-hidden="true">›</span>
         <span aria-current="page">Datenschutz</span>
       </nav>

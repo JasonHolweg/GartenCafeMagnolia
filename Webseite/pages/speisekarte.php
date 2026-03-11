@@ -72,7 +72,7 @@ $menu = [
   <section class="page-hero" aria-labelledby="menu-heading">
     <div class="container">
       <nav class="breadcrumb" aria-label="Breadcrumb">
-        <a href="/">Startseite</a>
+        <a href="<?= htmlspecialchars($base_path, ENT_QUOTES, 'UTF-8') ?>/">Startseite</a>
         <span aria-hidden="true">›</span>
         <span aria-current="page">Speisekarte</span>
       </nav>
@@ -165,7 +165,7 @@ $menu = [
     <div class="container reveal">
       <h2>Lust bekommen?</h2>
       <p style="margin-inline:auto;margin-bottom:2rem;">Reserviere deinen Tisch und erlebe die Speisekarte live im Treibhaus.</p>
-      <a href="/?page=tischreservieren" class="btn btn-accent">🗓 Jetzt Tisch reservieren</a>
+      <a href="<?= htmlspecialchars($base_path, ENT_QUOTES, 'UTF-8') ?>/?page=tischreservieren" class="btn btn-accent">🗓 Jetzt Tisch reservieren</a>
     </div>
   </section>
 
